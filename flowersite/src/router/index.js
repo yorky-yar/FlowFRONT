@@ -3,7 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'start',
+    component: () => import('@/views/StartView.vue')
+  },
+  {
+    path: '/home',
+    name: 'home',
     component: () => import('@/views/HomeView.vue')
   }
 ]

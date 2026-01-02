@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavbarTop />
+    <NavbarTop v-if="$route.name !== 'start'" />
     <router-view />
   </div>
 </template>

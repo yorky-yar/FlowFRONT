@@ -66,6 +66,10 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .home {
+    padding-top: 80px;
+  }
+  
   .top-rectangle {
     width: calc(100% - 40px);
     height: 250px;
@@ -92,6 +96,10 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .home {
+    padding-top: 76px;
+  }
+  
   .top-rectangle {
     width: calc(100% - 40px);
     height: 200px;
