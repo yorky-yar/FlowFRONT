@@ -12,6 +12,12 @@ export default {
   name: 'App',
   components: {
     NavbarTop
+  },
+  watch: {
+    $route() {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
   }
 }
 </script>
@@ -29,5 +35,6 @@ html, body, #app {
   background: #1c1B20;
   color: white;
   font-family: 'DM Sans', sans-serif;
+  overflow-anchor: none;
 }
 </style>
